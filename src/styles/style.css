@@ -1,0 +1,250 @@
+*,
+:after,
+:before {
+  @apply box-border;
+}
+
+html {
+  @apply leading-normal antialiased;
+  font-size: 16px;
+}
+
+body {
+  @apply font-sans text-base tracking-wide text-gray-800;
+}
+
+footer {
+  @apply pt-6 pr-0 pb-6 pl-0;
+}
+
+hr {
+  @apply bg-gray-200 h-px border-0;
+}
+
+/* Heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-tight tracking-tight;
+  @apply mt-12 mb-6;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold text-gray-800;
+}
+
+h1 {
+  @apply font-semibold text-6xl text-gray-900;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+h6 {
+  @apply text-lg;
+}
+
+h1 > a {
+  @apply no-underline;
+  color: inherit;
+}
+
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  @apply no-underline;
+  color: inherit;
+}
+
+/* Prose */
+
+p {
+  @apply leading-7;
+  @apply mt-0 mr-0 mb-8 ml-0;
+  @apply p-0;
+  --baseline-multiplier: 0.179;
+  --x-height-multiplier: 0.35;
+}
+
+ul,
+ol {
+  @apply mr-0 mb-8 ml-0;
+  @apply p-0;
+  @apply list-inside list-disc;
+}
+
+ul li,
+ol li {
+  @apply pl-0;
+  @apply mb-4;
+}
+
+li > p {
+  @apply mb-4;
+}
+
+li *:last-child {
+  @apply mb-0;
+}
+
+li > ul {
+  @apply mt-4 ml-8;
+}
+
+blockquote {
+  @apply text-gray-500 text-lg italic;
+  @apply mr-8 mb-8 -ml-6;
+  @apply  pt-0 pr-0 pb-0 pl-6;
+  @apply  border-l-4 border-solid border-pink-500;
+}
+
+blockquote > :last-child {
+  @apply mb-0;
+}
+
+blockquote > ul,
+blockquote > ol {
+  @apply list-inside;
+}
+
+table {
+  @apply w-full mb-8 border-collapse;
+}
+
+table thead tr th {
+  @apply border-b-2 border-solid border-gray-300;
+}
+
+/* Link */
+
+a {
+  @apply text-blue-500 hover:text-blue-400 hover:no-underline focus:text-blue-400 focus:no-underline;
+}
+
+/* Custom classes */
+
+.global-wrapper {
+  @apply max-w-2xl;
+  @apply mt-0 mr-auto mb-0 ml-auto;
+  @apply pt-10 pr-5 pb-10 pl-5;
+}
+
+.global-wrapper[data-is-root-path="true"] .bio {
+  @apply mb-20;
+}
+
+.global-header {
+  @apply mb-6;
+}
+
+.main-heading {
+  @apply font-bold text-2xl m-0;
+}
+
+.main-heading > a {
+  @apply text-blue-900 hover:text-blue-800 focus:text-blue-800;
+}
+
+.post-list-item {
+  @apply mt-8 mb-8;
+}
+
+.post-list-item p {
+  @apply mb-0;
+}
+
+.post-list-item h2 {
+  @apply text-4xl;
+  @apply mb-2 mt-0;
+}
+
+.post-list-item h2 a {
+  @apply text-blue-800 hover:text-blue-700 hover:no-underline focus:text-blue-700 focus:no-underline;
+}
+
+.post-list-item header {
+  @apply mb-4;
+}
+
+.post-list-item header small {
+  @apply text-gray-500;
+}
+
+.bio {
+  @apply flex mb-6;
+}
+
+.bio p {
+  @apply mb-0;
+}
+
+.bio-avatar {
+  @apply rounded-full h-24 w-24 mr-4 mb-0;
+}
+
+.bio-social {
+  @apply flex;
+}
+
+.bio-social a {
+  @apply mr-2;
+}
+
+.blog-post header h1 {
+  @apply mt-0 mr-0 mb-2 ml-0;
+}
+
+.blog-post header p {
+  @apply text-lg text-gray-500 font-normal;
+}
+
+.blog-post-nav ul {
+  @apply m-0;
+}
+
+.gatsby-highlight {
+  @apply mb-8;
+}
+
+/* Media queries */
+
+@media (max-width: 42rem) {
+  blockquote {
+    @apply pt-0 pr-0 pb-0 pl-4 ml-0;
+  }
+  ul,
+  ol {
+    @apply list-inside;
+  }
+}
+
+.gatsby-highlight {
+  @apply text-base;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  @apply font-sans;
+}

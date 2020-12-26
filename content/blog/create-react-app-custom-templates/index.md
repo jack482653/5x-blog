@@ -7,7 +7,7 @@ tags: ["React", "JavaScript"]
 
 之前提到 create-react-app 可以幫助開發者快速產生一個 React 專案，而 Custom Templates 功能可以根據樣板讓新的專案長出你希望的架構，同時安裝好你指定的相依性套件。雖然不是常常有機會開發新專案，但是如果能馬上產生立即可以開發的專案，花點時間寫 template 是很有幫助的。
 
-# Get Start!
+## Get Start!
 
 首先這個功能從 `react-scripts@3.3.0` 以後才有，所以使用前請先注意你的 create-react-app 版本（如果是直接用 npx 執行就不用煩惱這個問題）。
 
@@ -18,7 +18,7 @@ tags: ["React", "JavaScript"]
 
 你可以參考官方的 template 去建構出自己的 template 。
 
-# Structure
+## Structure
 
 template 基本架構如下：
 
@@ -38,7 +38,7 @@ cra-template-[template-name]/
 
 其中最重要的有 template.json 檔案跟 template 資料夾：
 
-## template 資料夾
+### template 資料夾
 在這邊放的檔案和資料夾會在執行 `npx create-react-app my-app` 的過程中複製到 `my-app` 專案。這個功能相當好用，我可以不用事後花老半天新增資料夾和檔案。例如我習慣將 `.jsx` 根據他是 container component 還是 presentational component 分別放在 `src/containers` 和 `src/components` ，然後 `components` 又可以根據該 component 的顆粒度分別放在 `elements` 、 `blocks` 、 `segments` 、 `layouts` 和 `pages` 等。還有一些基本的設定檔案等等我都可以放在 template 資料夾。以下是我的範例 template 資料夾目錄：
 
 ```
@@ -86,7 +86,7 @@ template
     └── utils
 ```
 
-## template.json
+### template.json
 template 的設定檔。目前只支援 `package` 這個 key ，在 `package` 底下可以寫任何你想要加到新專案底下的 `package.json` 的設定，比方說 `dependencies` 或是 `scripts` 等等。 而且 `dependencies` 和 `devDependencies` 的套件會在你初始化專案的時候一並安裝。以下是我的範例 template.json ：
 
 ```json
@@ -138,7 +138,7 @@ template 的設定檔。目前只支援 `package` 這個 key ，在 `package` �
 
 以上簡單安裝了 redux 、 axios 、 prettier 、 eslint 等等，以及我希望所有開發者在 commit 前可以自動先將 code format 過一次，以及進行 eslint 檢查，這樣我們的 coding style 才會一致。
 
-# Create Project from Custom Templates
+## Create Project from Custom Templates
 
 執行以下指令就能使用你的 custom template 產生新專案：
 
@@ -152,6 +152,6 @@ npx create-react-app my-app --template file:/path/to/your/template
 npx create-react-app my-app --template [template-name]
 ```
 
-# Reference
+## Reference
 
 * [Custom Templates](https://create-react-app.dev/docs/custom-templates/)

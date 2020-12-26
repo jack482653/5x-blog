@@ -9,10 +9,13 @@ module.exports = {
     siteUrl: `https://5x.netlify.app/`,
     social: {
       github: `jack482653`,
-      linkedin: `wuxianzhang`
+      linkedin: `wuxianzhang`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
