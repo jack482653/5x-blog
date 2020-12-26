@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import { GitHub, Linkedin } from 'react-feather';
+import { GitHub, Linkedin } from "react-feather"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -52,19 +52,21 @@ const Bio = () => {
           }}
         />
       )}
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          <br />
-          <a href={`https://twitter.com/${social?.github || ``}`}>
-            <GitHub />
+      <div className="flex flex-col">
+        {author?.name && (
+          <p className="text-gray-600">
+            Written by <strong className="text-gray-800">{author.name}</strong> {author?.summary || null}
+          </p>
+        )}
+        <div className="bio-social">
+          <a target="_blank" rel="noreferrer" href={`https://github.com/${social?.github || ``}`}>
+            <GitHub size={18} />
           </a>
-          {` `}
-          <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}>
-            <Linkedin />
+          <a target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}>
+            <Linkedin size={18} />
           </a>
-        </p>
-      )}
+        </div>
+      </div>
     </div>
   )
 }
