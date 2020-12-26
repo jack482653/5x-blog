@@ -241,11 +241,3 @@ a {
     @apply list-inside;
   }
 }
-
-.gatsby-highlight {
-  @apply text-base;
-}
-
-.gatsby-highlight pre[class*="language-"] {
-  @apply font-sans;
-}

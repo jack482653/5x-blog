@@ -7,10 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Nunito\\ Sans', 'Noto\\ Sans\\ TC', ...defaultTheme.fontFamily.sans],
+        'serif': [...defaultTheme.fontFamily.serif],
+        'mono': [...defaultTheme.fontFamily.mono],
       },
-    },
-    fontFamily: {
-      'title': ['Nunito\\ Sans',  ...defaultTheme.fontFamily.sans],
     },
   },
   variants: {
