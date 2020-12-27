@@ -222,11 +222,19 @@ a {
   @apply text-lg text-gray-500 font-normal;
 }
 
+.blog-post-nav {
+  @apply mb-8;
+}
+
 .blog-post-nav ul {
   @apply m-0;
 }
 
 .gatsby-highlight {
+  @apply mb-8;
+}
+
+.blog-post-comment {
   @apply mb-8;
 }
 
