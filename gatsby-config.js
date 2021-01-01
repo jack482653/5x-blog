@@ -5,7 +5,7 @@ module.exports = {
       name: `Zhang Wuxian`,
       summary: `下輩子我不當工程師了`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `下輩子我不當工程師了`,
     siteUrl: `https://5x.netlify.app/`,
     social: {
       github: `jack482653`,

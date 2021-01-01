@@ -21,6 +21,10 @@ hr {
   @apply bg-gray-200 h-px border-0;
 }
 
+section hr {
+  @apply mt-4 mb-8;
+}
+
 /* Heading */
 
 h1,
