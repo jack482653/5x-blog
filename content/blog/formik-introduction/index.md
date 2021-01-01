@@ -297,7 +297,7 @@ const App = () => (
 
 ---
 
-到目前為止我們已經可以做到簡單的登入表單，之後會講解 Formik 更複雜的用法。
+到目前為止我們已經可以做到簡單的登入表單。用了 formik 後 boilerplate code 少了很多，不過 validate 看起來很醜也不好維護，之後會講解 Formik 複雜的用法和 schema builder library Yup 的整合。
 
 ## Reference
 
