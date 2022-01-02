@@ -15,6 +15,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-158905919-1`,
+        cookieDomain: `5x.netlify.app`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-postcss`,
     },
     {
@@ -55,12 +62,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-158905919-1`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
