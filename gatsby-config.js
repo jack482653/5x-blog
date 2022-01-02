@@ -15,14 +15,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // your google analytics tracking id
+        // The property ID; the tracking code won't be generated without it
         trackingId: `UA-158905919-1`,
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // enable ip anonymization
-        anonymize: true,
       },
     },
     {
