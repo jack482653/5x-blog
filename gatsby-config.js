@@ -11,7 +11,7 @@ module.exports = {
       github: `jack482653`,
       linkedin: `wuxianzhang`,
     },
-    disqus: '5xx',
+    disqus: "5xx",
   },
   plugins: [
     {
@@ -46,6 +46,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
+              showCaptions: ["title"],
             },
           },
           {
@@ -57,6 +58,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-link-preview`,
         ],
       },
     },
