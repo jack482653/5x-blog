@@ -11,7 +11,7 @@ module.exports = {
       github: `jack482653`,
       linkedin: `wuxianzhang`,
     },
-    disqus: '5xx',
+    disqus: "5xx",
   },
   plugins: [
     {
