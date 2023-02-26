@@ -148,6 +148,10 @@ a {
   @apply text-blue-500 hover:text-blue-400 hover:no-underline focus:text-blue-400 focus:no-underline;
 }
 
+figcaption {
+  @apply text-center text-sm text-gray-500 mt-2;
+}
+
 /* Custom classes */
 
 .global-wrapper {
