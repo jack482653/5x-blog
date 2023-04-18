@@ -5,7 +5,7 @@ module.exports = {
       name: `Zhang Wuxian`,
       summary: `下輩子我不當工程師了`,
     },
-    image: `image.jpg`,
+    image: `/image.jpg`,
     description: `下輩子我不當工程師了`,
     siteUrl: `https://5x.rocks/`,
     social: {
