@@ -5,10 +5,12 @@ module.exports = {
       name: `Zhang Wuxian`,
       summary: `下輩子我不當工程師了`,
     },
+    image: `image.jpg`,
     description: `下輩子我不當工程師了`,
-    siteUrl: `https://5x.netlify.app/`,
+    siteUrl: `https://5x.rocks/`,
     social: {
       github: `jack482653`,
+      twitter: `jack482653`,
       linkedin: `wuxianzhang`,
     },
     disqus: "5xx",
