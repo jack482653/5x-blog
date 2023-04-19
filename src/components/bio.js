@@ -54,15 +54,27 @@ const Bio = () => {
       )}
       <div className="flex flex-col">
         {author?.name && (
-          <p className="text-gray-600">
-            Written by <strong className="text-gray-800">{author.name}</strong> {author?.summary || null}
+          <p className="text-gray-600 dark:text-gray-300">
+            Written by{" "}
+            <strong className="text-gray-800 dark:text-gray-100">
+              {author.name}
+            </strong>{" "}
+            {author?.summary || null}
           </p>
         )}
         <div className="bio-social">
-          <a target="_blank" rel="noreferrer" href={`https://github.com/${social?.github || ``}`}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={`https://github.com/${social?.github || ``}`}
+          >
             <GitHub size={18} />
           </a>
-          <a target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}
+          >
             <Linkedin size={18} />
           </a>
         </div>
