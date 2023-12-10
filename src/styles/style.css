@@ -103,7 +103,11 @@ ol {
 ul li,
 ol li {
   @apply pl-0;
-  @apply mb-4;
+}
+
+ul li,
+ol li:not(:last-child) {
+  @apply mb-14;
 }
 
 li > p {
